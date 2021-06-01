@@ -1,0 +1,13 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  username: postgres
+  password: postgres
+  pool: 5
+development:
+  <<: *default
+  database: "myrailsapp"
+Production:
+  <<: *default
+  database: "myrailsapp"
